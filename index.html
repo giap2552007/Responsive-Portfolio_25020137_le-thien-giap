@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Portfolio | Nhập môn Công nghệ số & AI</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Trang web học tập cá nhân tổng hợp 6 bài tập lớn môn Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo. Thiết kế premium, hiện đại, tích hợp khung xem trực tuyến tài liệu PDF.">
+  <meta name="keywords"
+    content="Portfolio, Công nghệ số, Trí tuệ nhân tạo, AI, Kỹ năng số, Đạo đức AI, Học tập cá nhân, Lập trình web">
+  <meta name="author" content="Sinh viên">
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow" id="glow-top-left"></div>
+  <div class="ambient-glow" id="glow-middle"></div>
+  <div class="ambient-glow" id="glow-bottom-right"></div>
+
+  <!-- Header Section -->
+  <header class="navbar" id="main-header">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="logo-link">
+        <div class="nav-logo-icon">P</div>
+        <span class="gradient-text">Portfolio</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#hero" id="nav-home">Trang chủ</a></li>
+          <li><a href="#about" id="nav-about">Giới thiệu</a></li>
+          <li><a href="#projects" id="nav-projects">6 Bài học dự án</a></li>
+          <li><a href="#summary" id="nav-summary">Tổng kết</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="menu-btn" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <img src="assets/images/hero-bg.png" alt="Digital Background" class="hero-bg-image" id="hero-bg-img">
+    <div class="hero-container">
+
+      <!-- Social Media Sidebar -->
+      <div class="hero-social-sidebar" id="social-sidebar">
+        <a href="#" class="hero-social-link" aria-label="Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hero-social-link" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+        <a href="#" class="hero-social-link" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+        <div class="hero-social-line"></div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="hero-content">
+        <span class="hero-welcome">Digital Portfolio cá nhân</span>
+        <h1 class="hero-title gradient-text">Nhập Môn Công Nghệ Số & AI</h1>
+        <p class="hero-desc">Hành trình tổng hợp tri thức học tập, nghiên cứu khoa học, cải tiến kỹ nghệ prompt và ứng
+          dụng trí tuệ nhân tạo có đạo đức trong kỷ nguyên số.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" id="btn-explore-projects">
+            <span>Khám phá dự án</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#about" class="btn btn-secondary" id="btn-learn-about">Tìm hiểu thêm</a>
+        </div>
+      </div>
+
+      <!-- Premium Graphic Aspect -->
+      <div class="hero-graphic" id="hero-interactive-graphic">
+        <div class="hero-cube-wrap">
+          <div class="hero-cube-glow"></div>
+          <div class="hero-cube-card">
+            <img src="assets/images/lesson5.png" alt="AI Illustration">
+            <h3 class="accent-gradient-text">Gen AI</h3>
+            <p>Hợp tác & Sáng tạo tương lai</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section fade-in-up" id="about">
+    <div class="section-title-wrapper">
+      <span class="section-badge">Thông tin cá nhân</span>
+      <h2 class="section-title gradient-text">Trang Giới Thiệu</h2>
+      <p class="section-subtitle">Giới thiệu tổng quan về bản thân, định hướng phát triển năng lực số và mục tiêu xây
+        dựng tập tài liệu số này.</p>
+    </div>
+
+    <div class="about-container">
+
+      <!-- Visual Column (Avatar and basic details) -->
+      <div class="about-visual" id="about-profile-card">
+        <div class="avatar-wrapper">
+          <div class="avatar-glow"></div>
+          <img src="assets/images/avatar.png" alt="Student Profile Avatar" class="avatar-img" id="profile-avatar-img">
+        </div>
+
+        <div class="about-card">
+          <h3 class="about-card-title"><i class="fas fa-id-card"></i> Hồ sơ sinh viên</h3>
+          <ul class="about-meta">
+            <li><span>Họ và Tên:</span> <span>Lê Thiện Giáp</span></li>
+            <li><span>Mã Số SV:</span> <span>25020137</span></li>
+            <li><span>Chuyên Ngành:</span> <span>Công nghệ thông tin</span></li>
+            <li><span>Lớp học:</span> <span>VNU1001_E252014</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Content Column -->
+      <div class="about-content" id="about-info-blocks">
+        <div class="about-text-block">
+          <h3><i class="fas fa-user-circle"></i> Về bản thân</h3>
+          <p>Em là một sinh viên đam mê công nghệ thông tin và giải pháp số. Em tin rằng sự kết hợp giữa kiến thức nền
+            tảng vững chắc và việc ứng dụng linh hoạt trí tuệ nhân tạo sẽ là chìa khóa mở ra nhiều cơ hội phát triển đột
+            phá trong tương lai.</p>
+        </div>
+
+        <div class="about-text-block">
+          <h3><i class="fas fa-bullseye"></i> Mục tiêu & Định hướng phát triển</h3>
+          <p>Định vị bản thân trở thành một kỹ sư CNTT toàn diện, kết hợp công nghệ tự động hóa và phân tích dữ
+            liệu chuyên sâu để tạo ra các giá trị bền vững.</p>
+
+          <div class="goals-grid">
+            <div class="goal-card">
+              <div class="goal-icon"><i class="fas fa-graduation-cap"></i></div>
+              <h4>Học tập & Học thuật</h4>
+              <p>Nắm vững phương pháp nghiên cứu tài liệu học thuật và phân tích bài toán chuyên sâu bằng công cụ tìm
+                kiếm tối ưu.</p>
+            </div>
+
+            <div class="goal-card">
+              <div class="goal-icon"><i class="fas fa-laptop-code"></i></div>
+              <h4>Kỹ năng công nghệ</h4>
+              <p>Thành thạo kỹ nghệ prompt và các công cụ AI tạo sinh hỗ trợ thiết kế, xây dựng nội dung đa phương tiện
+                chất lượng cao.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text-block">
+          <h3><i class="fas fa-briefcase"></i> Ý nghĩa của Portfolio này</h3>
+          <p>Trang Portfolio này được thiết kế và xây dựng thủ công nhằm 2 mục tiêu chính:</p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem; margin-top: 0.8rem;">
+            <li style="display: flex; gap: 0.8rem; align-items: flex-start; color: var(--text-secondary);">
+              <i class="fas fa-check-circle" style="color: var(--accent-secondary); margin-top: 0.3rem;"></i>
+              <span><strong>Thể hiện kỹ năng số đã học:</strong> Minh chứng năng lực qua 6 bài học cụ thể về tổ chức,
+                nghiên cứu, ứng dụng AI và làm việc nhóm trực tuyến.</span>
+            </li>
+            <li style="display: flex; gap: 0.8rem; align-items: flex-start; color: var(--text-secondary);">
+              <i class="fas fa-check-circle" style="color: var(--accent-secondary); margin-top: 0.3rem;"></i>
+              <span><strong>Lưu trữ sản phẩm cá nhân:</strong> Hệ thống hóa kết quả làm việc để dễ dàng truy cập, chia
+                sẻ công khai và phục vụ mục tiêu học tập suốt đời.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects Section (Lesson Windows) -->
+  <section class="section fade-in-up" id="projects">
+    <div class="section-title-wrapper">
+      <span class="section-badge">Hệ thống bài tập</span>
+      <h2 class="section-title gradient-text">6 Bài Tập Dự Án Cá Nhân</h2>
+      <p class="section-subtitle">Bấm vào bất kỳ ô cửa sổ dự án nào dưới đây để xem thông tin chi tiết, mục tiêu, kết
+        quả đầu ra và xem trực tuyến tài liệu PDF của bài học đó.</p>
+    </div>
+
+    <div class="projects-grid" id="lesson-cards-container">
+
+      <!-- Lesson 1 Card -->
+      <div class="project-card" data-lesson="lesson1" id="card-lesson1">
+        <div class="project-img-wrapper">
+          <div class="project-status">
+            <div class="status-dot"></div>Đã hoàn thành
+          </div>
+          <img src="assets/images/lesson1.png" alt="Thao tác tập tin thư mục" class="project-img">
+        </div>
+        <div class="project-content">
+          <span class="project-lesson">Bài 1 • Chương 1.4</span>
+          <h3 class="project-card-title">Cấu trúc tệp tin & quy tắc đặt tên khoa học</h3>
+          <p class="project-desc">Trình bày cấu trúc thư mục tối ưu, khoa học và các quy tắc đặt tên tập tin/thư mục đã
+            được thiết lập để quản lý hiệu quả tài nguyên học tập cá nhân.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="project-tag">Tổ chức</span>
+              <span class="project-tag">Cơ bản</span>
+            </div>
+            <span class="project-more">Xem chi tiết <i class="fas fa-chevron-right"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lesson 2 Card -->
+      <div class="project-card" data-lesson="lesson2" id="card-lesson2">
+        <div class="project-img-wrapper">
+          <div class="project-status">
+            <div class="status-dot"></div>Đã hoàn thành
+          </div>
+          <img src="assets/images/lesson2.png" alt="Tìm kiếm học thuật" class="project-img">
+        </div>
+        <div class="project-content">
+          <span class="project-lesson">Bài 2 • Chương 2.4</span>
+          <h3 class="project-card-title">Tìm kiếm & đánh giá thông tin khoa học</h3>
+          <p class="project-desc">Trực quan hóa kết quả tìm kiếm học thuật chất lượng cao bằng cách áp dụng các toán tử
+            tìm kiếm nâng cao và thực hiện đánh giá độ tin cậy của nguồn thông tin khoa học.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="project-tag">Nghiên cứu</span>
+              <span class="project-tag">CRAAP Test</span>
+            </div>
+            <span class="project-more">Xem chi tiết <i class="fas fa-chevron-right"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lesson 3 Card -->
+      <div class="project-card" data-lesson="lesson3" id="card-lesson3">
+        <div class="project-img-wrapper">
+          <div class="project-status">
+            <div class="status-dot"></div>Đã hoàn thành
+          </div>
+          <img src="assets/images/lesson3.png" alt="Kỹ nghệ Prompt AI" class="project-img">
+        </div>
+        <div class="project-content">
+          <span class="project-lesson">Bài 3 • Chương 3.4</span>
+          <h3 class="project-card-title">Thiết kế & Tối ưu Prompt cho Tác vụ Học tập</h3>
+          <p class="project-desc">So sánh chi tiết và sinh động giữa Prompt ban đầu sơ sài và Prompt cải tiến ứng dụng
+            các quy tắc kỹ nghệ prompt chuyên nghiệp kèm theo phân tích kết quả đầu ra.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="project-tag">Kỹ nghệ Prompt</span>
+              <span class="project-tag">AI</span>
+            </div>
+            <span class="project-more">Xem chi tiết <i class="fas fa-chevron-right"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lesson 4 Card -->
+      <div class="project-card" data-lesson="lesson4" id="card-lesson4">
+        <div class="project-img-wrapper">
+          <div class="project-status">
+            <div class="status-dot"></div>Đã hoàn thành
+          </div>
+          <img src="assets/images/lesson4.png" alt="Làm việc nhóm số" class="project-img">
+        </div>
+        <div class="project-content">
+          <span class="project-lesson">Bài 4 • Chương 4.4</span>
+          <h3 class="project-card-title">Hợp tác & Quản trị Dự án Nhóm trực tuyến</h3>
+          <p class="project-desc">Minh chứng về việc sử dụng các nền tảng quản trị dự án Kanban và bộ công cụ đồng soạn
+            thảo đám mây để tối ưu hóa hiệu suất làm việc nhóm từ xa.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="project-tag">Làm việc nhóm</span>
+              <span class="project-tag">Trello</span>
+            </div>
+            <span class="project-more">Xem chi tiết <i class="fas fa-chevron-right"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lesson 5 Card -->
+      <div class="project-card" data-lesson="lesson5" id="card-lesson5">
+        <div class="project-img-wrapper">
+          <div class="project-status">
+            <div class="status-dot"></div>Đã hoàn thành
+          </div>
+          <img src="assets/images/lesson5.png" alt="AI Tạo Sinh" class="project-img">
+        </div>
+        <div class="project-content">
+          <span class="project-lesson">Bài 5 • Chương 5.4</span>
+          <h3 class="project-card-title">Sáng tạo nội dung với sự hỗ trợ của AI</h3>
+          <p class="project-desc">Trưng bày các sản phẩm nội dung số (hình ảnh, poster, kịch bản hoặc tài liệu truyền
+            thông) được đồng sáng tạo tinh tế nhờ sự hỗ trợ đắc lực từ AI tạo sinh.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="project-tag">Sáng tạo</span>
+              <span class="project-tag">GenAI</span>
+            </div>
+            <span class="project-more">Xem chi tiết <i class="fas fa-chevron-right"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lesson 6 Card -->
+      <div class="project-card" data-lesson="lesson6" id="card-lesson6">
+        <div class="project-img-wrapper">
+          <div class="project-status">
+            <div class="status-dot"></div>Đã hoàn thành
+          </div>
+          <img src="assets/images/lesson6.png" alt="Đạo đức AI" class="project-img">
+        </div>
+        <div class="project-content">
+          <span class="project-lesson">Bài 6 • Chương 6.4</span>
+          <h3 class="project-card-title">Ứng dụng AI Có Trách nhiệm & Liêm chính</h3>
+          <p class="project-desc">Xây dựng và cam kết thực thi bộ nguyên tắc ứng xử học thuật cá nhân khi dùng AI, đảm
+            bảo tôn trọng bản quyền và tính chân thực của thông tin khoa học.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="project-tag">Liêm chính</span>
+              <span class="project-tag">Đạo đức</span>
+            </div>
+            <span class="project-more">Xem chi tiết <i class="fas fa-chevron-right"></i></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Summary Section -->
+  <section class="section fade-in-up" id="summary">
+    <div class="section-title-wrapper">
+      <span class="section-badge">Tổng kết học tập</span>
+      <h2 class="section-title gradient-text">Trang Tổng Kết Dự Án</h2>
+      <p class="section-subtitle">Đúc kết những trải nghiệm sâu sắc, các bài học giá trị và sự trưởng thành của bản thân
+        sau quá trình thực hiện dự án số.</p>
+    </div>
+
+    <div class="summary-container">
+
+      <!-- Highlight Reflection Block -->
+      <div class="summary-intro-card" id="reflection-main-card">
+        <h3 class="accent-gradient-text">Cảm nhận chung về hành trình</h3>
+        <p>Việc xây dựng trang Digital Portfolio này không chỉ là một bài tập học thuật, mà còn là một cơ hội lớn để em
+          nhìn nhận lại các kỹ năng số của bản thân. Từ những bước cơ bản đặt tên file, cho đến việc tối ưu hóa prompt
+          AI hay thiết kế cẩm nang liêm chính học thuật, tất cả đều tạo nên một tư duy làm việc khoa học, minh bạch và
+          cấp tiến trong thời đại số hóa.</p>
+      </div>
+
+      <!-- 3 Key Columns of Reflection -->
+      <div class="summary-grid" id="reflection-details-grid">
+
+        <!-- Column 1 -->
+        <div class="summary-card">
+          <div class="summary-card-icon"><i class="fas fa-brain"></i></div>
+          <h4>Kiến thức & Kỹ năng Đã Đạt</h4>
+          <ul>
+            <li>Khả năng tổ chức hệ thống dữ liệu chặt chẽ và chuyên nghiệp.</li>
+            <li>Kỹ năng tư duy logic để xây dựng các prompt AI phức tạp và hiệu quả.</li>
+            <li>Sử dụng thành thạo phương pháp kiểm chứng tài liệu khoa học CRAAP.</li>
+          </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="summary-card">
+          <div class="summary-card-icon"><i class="fas fa-exclamation-triangle"></i></div>
+          <h4>Thách thức Gặp Phải</h4>
+          <ul>
+            <li>Khó khăn trong việc biên tập các câu lệnh AI ban đầu để có kết quả chính xác.</li>
+            <li>Sắp xếp thời gian hợp tác làm việc nhóm trực tuyến đồng đều cho tất cả thành viên.</li>
+            <li>Kiểm duyệt và loại bỏ những thông tin sai lệch do AI tạo ra (hallucination).</li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="summary-card">
+          <div class="summary-card-icon"><i class="fas fa-award"></i></div>
+          <h4>Niềm tự hào & Trọng tâm</h4>
+          <ul>
+            <li>Hoàn thành hệ thống 6 sản phẩm bài học chỉn chu, thẩm mỹ cao.</li>
+            <li>Ứng dụng thành công AI vào việc hỗ trợ thiết kế sản phẩm đồ họa thực tế.</li>
+            <li>Xây dựng được bộ nguyên tắc sử dụng AI liêm chính áp dụng lâu dài.</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Project Modal (Lightbox Window) -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-window">
+      <button class="modal-close-btn" aria-label="Close interactive window">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <!-- Top Image Header -->
+      <div class="modal-header-img-wrapper">
+        <img src="assets/images/lesson1.png" alt="Lesson Details Header" class="modal-header-img">
+        <div class="modal-header-img-overlay"></div>
+      </div>
+
+      <!-- Body details -->
+      <div class="modal-body">
+
+        <!-- Header Metadata -->
+        <div class="modal-meta">
+          <span class="modal-meta-item modal-meta-badge"><i class="fas fa-bookmark"></i> Bài 1 - Chương 1.4</span>
+          <span class="modal-meta-item modal-meta-tag"><i class="fas fa-tag"></i> Quản lý dữ liệu</span>
+          <span class="modal-meta-item modal-meta-duration"><i class="fas fa-calendar-alt"></i> Tuần 1</span>
+          <span class="modal-meta-item modal-meta-difficulty"><i class="fas fa-tachometer-alt"></i> Cơ bản</span>
+        </div>
+
+        <!-- Project Title -->
+        <h2 class="modal-title accent-gradient-text" id="modal-title-heading">Tên bài học dự án</h2>
+
+        <!-- Description -->
+        <div class="modal-desc-wrapper">
+          <h3 class="modal-section-title"><i class="fas fa-info-circle"></i> Tóm tắt bài làm</h3>
+          <p class="modal-desc">Mô tả tóm tắt nội dung bài làm của sinh viên...</p>
+        </div>
+
+        <!-- Details Grid (Objectives & Deliverables) -->
+        <div class="modal-details-grid">
+
+          <div class="modal-details-card">
+            <h3 class="modal-section-title"><i class="fas fa-bullseye"></i> Mục tiêu bài học</h3>
+            <ul class="modal-objectives-list">
+              <li>Mục tiêu 1</li>
+              <li>Mục tiêu 2</li>
+            </ul>
+          </div>
+
+          <div class="modal-details-card">
+            <h3 class="modal-section-title"><i class="fas fa-file-invoice"></i> Kết quả đầu ra</h3>
+            <ul class="modal-results-list">
+              <li>Sản phẩm đầu ra 1</li>
+              <li>Sản phẩm đầu ra 2</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- PDF Inline Preview Container -->
+        <div class="modal-preview-container" id="modal-preview-box" style="display: none;">
+          <h3 class="modal-section-title"><i class="fas fa-file-pdf"></i> Xem trực tuyến tài liệu PDF</h3>
+          <div class="iframe-wrapper">
+            <iframe src="" id="modal-doc-preview" title="PDF Preview"></iframe>
+          </div>
+        </div>
+
+        <!-- Local Document Download/Open Card -->
+        <div class="doc-download-card" id="modal-doc-download" style="display: none;">
+          <div class="doc-file-icon">
+            <i class="fas fa-file-pdf" style="color: #ff1744;"></i>
+          </div>
+          <div class="doc-file-info">
+            <span class="doc-file-name" id="modal-doc-filename">Tên_tập_tin.pdf</span>
+            <span class="doc-file-meta" id="modal-doc-filesize">Tài liệu PDF chính thức</span>
+          </div>
+          <a href="#" target="_blank" class="btn-doc-open" id="modal-doc-open-btn">
+            <i class="fas fa-external-link-alt"></i> Mở trong tab mới
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer" id="main-footer">
+    <div class="footer-container">
+      <a href="#" class="footer-logo">
+        <div class="footer-logo-icon">P</div>
+        <span class="gradient-text">Portfolio Cá Nhân</span>
+      </a>
+
+      <p class="footer-text">Trang web học tập được xây dựng thủ công bằng HTML, CSS, và JS thuần. Một sản phẩm thuộc
+        môn học Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo.</p>
+
+      <ul class="footer-links">
+        <li><a href="#hero">Trang chủ</a></li>
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#projects">Dự án</a></li>
+        <li><a href="#summary">Tổng kết</a></li>
+      </ul>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lê Thiện Giáp. Bản quyền thuộc về tác giả. Dự án học tập phi thương mại.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-link" aria-label="Facebook Link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="footer-social-link" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+          <a href="#" class="footer-social-link" aria-label="LinkedIn Link"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactivity Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
